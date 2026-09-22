@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+<defs>
+ <radialGradient id="g" cx="50%" cy="45%"><stop offset="0" stop-color="#fffaf0"/><stop offset="1" stop-color="#eadfc9"/></radialGradient>
+ <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#b98520"/><stop offset=".5" stop-color="#f4d47a"/><stop offset="1" stop-color="#a87318"/></linearGradient>
+</defs>
+<circle cx="400" cy="400" r="382" fill="#7b1420" stroke="url(#gold)" stroke-width="18"/>
+<circle cx="400" cy="400" r="340" fill="url(#g)" stroke="url(#gold)" stroke-width="8"/>
+<circle cx="400" cy="400" r="315" fill="none" stroke="#7b1420" stroke-width="5"/>
+<g fill="#b98520"><path d="M400 112l10 27 29 2-22 18 7 28-24-15-24 15 7-28-22-18 29-2z"/><path d="M315 125l8 21 23 2-18 14 6 23-19-12-20 12 6-23-18-14 23-2z"/><path d="M485 125l8 21 23 2-18 14 6 23-19-12-20 12 6-23-18-14 23-2z"/></g>
+<g fill="#7b1420" font-family="Georgia,serif" text-anchor="middle">
+ <text x="400" y="235" font-size="46" font-weight="bold" letter-spacing="5">SELO DE</text>
+ <text x="400" y="330" font-size="92" font-weight="bold" letter-spacing="3">QUALIDADE</text>
+ <text x="400" y="390" font-size="34" font-weight="bold" letter-spacing="4">SABOR &amp; MINAS</text>
+</g>
+<path d="M245 365h310" stroke="url(#gold)" stroke-width="6"/>
+<g transform="translate(400 570)">
+ <path d="M-175 95Q-95 10 0 70Q95 10 175 95" fill="none" stroke="#b98520" stroke-width="7"/>
+ <g fill="#d99b2b" stroke="#a87318" stroke-width="3">
+  <circle cx="-72" cy="40" r="52"/><circle cx="0" cy="8" r="62"/><circle cx="72" cy="40" r="52"/>
+ </g>
+ <g fill="none" stroke="#fff0bd" stroke-width="6" opacity=".8"><path d="M-95 25l35 20M-18 -18l38 35M52 18l35 22"/></g>
+</g>
+<g fill="#b98520"><path d="M170 540q-60 35-92 105q62-25 113-76z"/><path d="M630 540q60 35 92 105q-62-25-113-76z"/></g>
+<text x="400" y="700" text-anchor="middle" font-family="Georgia,serif" font-size="24" fill="#7b1420" letter-spacing="3">TRADIÇÃO • QUALIDADE • SABOR</text>
+</svg>
