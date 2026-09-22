@@ -27,3 +27,6 @@
 .products .product-card:nth-child(4) img{transform:scale(1.035);object-position:50% 52%}
 .products .product-card:nth-child(5) img{transform:scale(1.045);object-position:50% 52%}
 .products .product-card:nth-child(6) img{transform:scale(1.045);object-position:50% 52%}
+
+/* Ajuste específico: imagem da Chipa na janela Hora do Lanche — mostra mais área sem alterar a janela */
+.products .product-card:nth-child(3) img{transform:scale(1.0);object-position:50% 50%}
