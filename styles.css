@@ -47,3 +47,13 @@
 .recipe-body p{font-size:13px;line-height:1.6;color:#4d4038;margin:0}
 @media(max-width:900px){.recipes-list{grid-template-columns:1fr}}
 @media(max-width:600px){.recipe-image{height:190px}.recipe-body{padding:20px}.recipe-body h2{font-size:26px}}
+
+/* Marca Própria */
+.brand-hero{display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center;margin-top:34px}
+.brand-hero-copy{font-size:14px;line-height:1.7;color:#4d4038}
+.brand-hero-copy p{margin:0 0 18px}
+.brand-hero-copy .lead{font-size:19px;line-height:1.5;color:#332921}
+.brand-hero-copy h2{font-family:'Cormorant Garamond',serif;font-size:36px;line-height:1.05;color:var(--wine);margin:28px 0 12px}
+.brand-hero-image{border-radius:8px;overflow:hidden;box-shadow:0 12px 30px rgba(48,32,22,.12)}
+.brand-hero-image img{display:block;width:100%;height:auto}
+@media(max-width:900px){.brand-hero{grid-template-columns:1fr;gap:30px}}
