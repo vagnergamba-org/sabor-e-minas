@@ -96,3 +96,5 @@
 .product-detail-page .product-info .product-steps li{margin:2px 0}
 .menu-dropdown > .menu-drop-trigger{border-bottom:0!important}
 .menu-dropdown > .menu-drop-trigger:after{display:none!important}
+
+.product-detail-page .product-info .info-block,.product-detail-page .product-info .info-block p,.product-detail-page .product-info .info-block li,.product-detail-page .product-info .product-steps,.product-detail-page .product-info .product-steps li{font-family:'Montserrat',Arial,sans-serif!important;font-size:14px!important;line-height:1.7!important;color:#4f423a!important}.product-detail-page .product-info .info-block h2{font-family:'Cormorant Garamond',Georgia,serif!important;font-size:34px!important;line-height:1!important;color:var(--wine)!important}.product-detail-page .product-info .product-steps{margin:0;padding-left:28px}.product-detail-page .product-info .product-steps li{margin:2px 0}.menu-dropdown>.menu-drop-trigger{border-bottom:0!important}.menu-dropdown>.menu-drop-trigger:after{display:none!important}
