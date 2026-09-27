@@ -9,12 +9,17 @@ jobs:
   keepalive:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate Supabase activity
+      - name: Generate Supabase database activity
         env:
           SUPABASE_URL: https://bifzqlgilubtrkcvzqzg.supabase.co
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEEPALIVE_KEY }}
         run: |
           set -e
-          code=$(curl -sS -o /tmp/supabase-response.txt -w "%{http_code}"             "$SUPABASE_URL/rest/v1/"             -H "apikey: $SUPABASE_KEY"             -H "Authorization: Bearer $SUPABASE_KEY")
+
+          code=$(curl -sS -o /tmp/supabase-response.txt -w "%{http_code}" \
+            "$SUPABASE_URL/rest/v1/supabase_keepalive?select=id&limit=1" \
+            -H "apikey: $SUPABASE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_KEY")
+
           cat /tmp/supabase-response.txt
           test "$code" = "200"
