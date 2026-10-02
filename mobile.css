@@ -1,4 +1,4 @@
-.mobile-menu-toggle{display:none}
+.mobile-menu-toggle,.mobile-submenu-toggle{display:none}
 @media(max-width:700px){
   body.mobile-menu-open{overflow:hidden}
   .header{height:72px!important;min-height:72px;background:#f8f5ef}
