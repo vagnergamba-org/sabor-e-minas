@@ -73,3 +73,26 @@
   body:has(.hero) .footer-contact{font-size:10px!important}
   body:has(.hero) .footer-contact strong{font-size:20px!important}
 }
+
+/* Etapa 4 — Receitas mobile em lista expansível */
+@media(max-width:700px){
+  .recipes-page{padding-top:34px!important}
+  .recipes-page .page-title{font-size:39px!important}
+  .recipes-page .lead{font-size:13px!important;line-height:1.5!important;margin-bottom:20px}
+  .recipes-list{display:block!important;margin-top:22px!important}
+  .recipe-card{margin:0 0 9px!important;border-radius:5px!important;box-shadow:none!important;overflow:hidden}
+  .recipe-image{display:none!important;height:auto!important}
+  .recipe-body{padding:0!important}
+  .recipe-body h2{position:relative;margin:0!important;padding:16px 44px 16px 16px!important;font-size:22px!important;line-height:1.06!important;cursor:pointer}
+  .recipe-body h2:after{content:'+';position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:Montserrat,Arial,sans-serif;font-size:24px;font-weight:400;color:var(--wine)}
+  .recipe-body>h3,.recipe-body>ul,.recipe-body>p{display:none!important}
+  .recipe-card.recipe-open .recipe-image{display:flex!important;aspect-ratio:16/9!important}
+  .recipe-card.recipe-open .recipe-image img{width:100%!important;height:100%!important;object-fit:cover!important}
+  .recipe-card.recipe-open .recipe-body{padding:0 18px 20px!important}
+  .recipe-card.recipe-open .recipe-body h2{margin:0 -18px 16px!important;padding-left:18px!important}
+  .recipe-card.recipe-open .recipe-body h2:after{content:'–'}
+  .recipe-card.recipe-open .recipe-body>h3{display:block!important;font-size:11px!important;margin:16px 0 7px!important}
+  .recipe-card.recipe-open .recipe-body>ul{display:block!important;font-size:12px!important;line-height:1.5!important}
+  .recipe-card.recipe-open .recipe-body>p{display:block!important;font-size:12px!important;line-height:1.55!important}
+  .recipe-modal{display:none!important}
+}
