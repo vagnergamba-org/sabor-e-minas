@@ -25,3 +25,51 @@
   .dropdown-panel a{display:block!important;padding:11px 8px!important;border-bottom:1px solid rgba(143,17,17,.08)!important;font-size:13px!important;white-space:normal!important}
   .dropdown-panel a:last-child{border-bottom:0!important}
 }
+
+/* Etapa 3 — Home mobile enxuta */
+@media(max-width:700px){
+  body:has(.hero) .hero{
+    min-height:420px!important;
+    background-image:linear-gradient(90deg,rgba(0,0,0,.58) 0%,rgba(0,0,0,.28) 55%,rgba(0,0,0,.04) 100%),url('tradicional-novo.webp')!important;
+    background-position:center!important;
+  }
+  body:has(.hero) .hero-content{max-width:92%;padding:38px 0!important}
+  body:has(.hero) .hero h1{font-size:43px!important;line-height:.92!important;margin:10px 0 16px!important}
+  body:has(.hero) .hero p{font-size:14px!important;line-height:1.45!important;max-width:310px}
+  body:has(.hero) .hero .btn{padding:12px 18px!important;font-size:10px!important}
+  body:has(.hero) .benefits{display:none!important}
+  body:has(.hero) .products{padding:34px 0 38px!important}
+  body:has(.hero) .products .section-title{font-size:34px!important}
+  body:has(.hero) .products .section-sub{font-size:12px!important;margin-bottom:18px!important}
+  body:has(.hero) .products .product-grid{grid-template-columns:repeat(3,1fr)!important;gap:8px!important}
+  body:has(.hero) .products .product-card:nth-child(3),
+  body:has(.hero) .products .product-card:nth-child(4),
+  body:has(.hero) .products .product-card:nth-child(6){display:none!important}
+  body:has(.hero) .products .product-card img{aspect-ratio:1/1!important;transform:none!important;object-position:center!important;border-radius:7px}
+  body:has(.hero) .products .product-card h3{font-size:17px!important;line-height:.98!important;margin:8px 0 5px!important}
+  body:has(.hero) .products .product-card p{font-size:9px!important;line-height:1.35!important;max-width:100%!important}
+  body:has(.hero) .products .btn{margin-top:20px!important;padding:11px 18px!important;font-size:10px!important}
+  body:has(.hero) .story{display:block!important;min-height:0!important}
+  body:has(.hero) .story-photo{display:none!important}
+  body:has(.hero) .story-copy{padding:30px 7%!important;text-align:center}
+  body:has(.hero) .story-copy h2{font-size:31px!important}
+  body:has(.hero) .story-copy p{font-size:12px!important;max-width:520px;margin:0 auto 12px}
+  body:has(.hero) .story-copy .btn{font-size:10px!important;padding:11px 17px!important}
+  body:has(.hero) .three-links{padding:20px 0!important}
+  body:has(.hero) .three-grid{gap:0!important}
+  body:has(.hero) .mini-card{grid-template-columns:88px 1fr!important;gap:14px!important;padding:14px 0!important;border-right:0!important;border-bottom:1px solid #ddd!important}
+  body:has(.hero) .mini-card:last-child{border-bottom:0!important}
+  body:has(.hero) .mini-card img{width:88px!important;height:72px!important;object-fit:cover!important;margin:0!important}
+  body:has(.hero) .three-grid .mini-card:nth-child(2) img{width:72px!important;height:72px!important;object-fit:contain!important;margin:auto!important}
+  body:has(.hero) .mini-card h3{font-size:22px!important}
+  body:has(.hero) .mini-card p{font-size:10px!important}
+  body:has(.hero) .find{padding:24px 0!important}
+  body:has(.hero) .find-inner{flex-direction:column!important;align-items:flex-start!important;gap:16px!important}
+  body:has(.hero) .find-title{font-size:24px!important}
+  body:has(.hero) .find p{font-size:11px!important}
+  body:has(.hero) .footer{padding:22px 0!important}
+  body:has(.hero) .footer-brand img{width:105px!important}
+  body:has(.hero) .footer-copy{font-size:15px!important}
+  body:has(.hero) .footer-contact{font-size:10px!important}
+  body:has(.hero) .footer-contact strong{font-size:20px!important}
+}
