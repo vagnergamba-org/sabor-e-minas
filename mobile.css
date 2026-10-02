@@ -96,3 +96,56 @@
   .recipe-card.recipe-open .recipe-body>p{display:block!important;font-size:12px!important;line-height:1.55!important}
   .recipe-modal{display:none!important}
 }
+
+/* Etapa 5 — Produto mobile compacto e sem cortes */
+@media(max-width:700px){
+  .product-detail-page{padding:28px 0 48px!important}
+  .product-breadcrumb{font-size:9px!important;line-height:1.35!important;margin-bottom:16px!important;flex-wrap:wrap}
+  .product-master{grid-template-columns:1fr!important;gap:22px!important;align-items:start!important}
+  .product-main-image{border-radius:6px!important}
+  .product-main-image img{width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;background:#fff}
+  .gourmet-main-placeholder{height:310px!important}
+  .product-intro .page-title{font-size:40px!important;line-height:.95!important;padding-right:0!important;margin-top:7px!important}
+  .product-intro h2{font-size:25px!important;margin:10px 0 7px!important}
+  .product-lead{font-size:13px!important;line-height:1.55!important}
+  .product-intro .btn{padding:12px 18px!important;font-size:10px!important}
+  .quality-badge{width:58px!important;height:58px!important;right:0!important;top:-4px!important}
+  .product-highlights{grid-template-columns:1fr!important;gap:8px!important;margin:20px 0!important}
+  .product-info{margin-top:34px!important}
+  .product-tabs{display:none!important}
+  .info-columns{grid-template-columns:1fr!important;gap:0!important;padding-top:0!important}
+  .info-block{margin:0!important;border-top:1px solid #ded4ca;background:#fff}
+  .info-block:last-child{border-bottom:1px solid #ded4ca}
+  .info-block>.section-kicker{display:none!important}
+  .info-block h2{position:relative;margin:0!important;padding:15px 44px 15px 14px!important;font-size:23px!important;line-height:1.05!important;cursor:pointer;color:var(--wine)!important}
+  .info-block h2:after{content:'+';position:absolute;right:15px;top:50%;transform:translateY(-50%);font-family:Montserrat,Arial,sans-serif;font-size:23px;font-weight:400}
+  .info-block:not(.mobile-open)>*:not(h2):not(.section-kicker){display:none!important}
+  .info-block.mobile-open{padding-bottom:16px!important}
+  .info-block.mobile-open h2:after{content:'–'}
+  .info-block.mobile-open>p,.info-block.mobile-open>ol{font-size:12px!important;line-height:1.58!important;margin:0 14px 10px!important}
+  .info-block.mobile-open>.pack-grid,.info-block.mobile-open>.tech-table{margin-left:14px!important;margin-right:14px!important}
+  .product-steps{padding-left:19px!important}
+  .pack-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+  .pack-card{padding:9px!important}
+  .pack-art{height:110px!important}
+  .pack-card strong{font-size:10px!important}
+  .pack-card small{font-size:9px!important}
+  .nutrition{margin:10px 0 0!important;padding:0!important;border:1px solid #ded4ca!important;background:#fff!important}
+  .nutrition-head{position:relative;display:block!important;margin:0!important;padding:15px 44px 15px 14px!important;cursor:pointer}
+  .nutrition-head .section-kicker{display:none!important}
+  .nutrition-head h2{font-size:23px!important;margin:0!important}
+  .nutrition-head>span{display:none!important}
+  .nutrition-head:after{content:'+';position:absolute;right:15px;top:50%;transform:translateY(-50%);font-family:Montserrat,Arial,sans-serif;font-size:23px;color:var(--wine)}
+  .nutrition:not(.mobile-open)>.nutrition-image,
+  .nutrition:not(.mobile-open)>.nutrition-table-wrap,
+  .nutrition:not(.mobile-open)>.nutrition-note{display:none!important}
+  .nutrition.mobile-open{padding-bottom:14px!important}
+  .nutrition.mobile-open .nutrition-head:after{content:'–'}
+  .nutrition.mobile-open>.nutrition-image,.nutrition.mobile-open>.nutrition-table-wrap{margin:0 12px!important}
+  .nutrition-image img{max-width:100%!important;max-height:none!important}
+  .related-products{padding:42px 0 10px!important}
+  .related-products .section-title{font-size:31px!important}
+  .related-grid,.gourmet-related-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+  .related-image,.related-grid img{height:120px!important}
+  .related-grid strong{font-size:18px!important;padding:10px 11px!important}
+}
