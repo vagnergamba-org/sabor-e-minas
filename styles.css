@@ -122,3 +122,7 @@
 /* Performance: recursos fora da primeira tela */
 .story-photo.bg-loaded{background-image:url('cesta.png')}
 .products,.story,.three-links,.find,.product-info,.related-products,.recipes-list{content-visibility:auto;contain-intrinsic-size:auto 500px}
+
+/* Formulários e consulta de região */
+.find-tools{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;margin-top:38px;align-items:start}.find-tools .find-box{margin-top:0;max-width:none}.find-direct a:not(.mini-link){color:var(--wine);font-weight:600}.site-form{display:grid;gap:15px;margin-top:22px}.form-grid{display:grid;grid-template-columns:2fr 1fr;gap:13px}.site-form label{display:grid;gap:7px;font-size:11px;font-weight:700;letter-spacing:.5px;color:#5d4a40}.site-form label small{font-weight:500;color:#807269}.site-form input,.site-form select,.site-form textarea{width:100%;min-height:46px;border:1px solid #d8cec4;border-radius:4px;background:#fff;color:#2f2824;font:500 13px Montserrat,Arial,sans-serif;padding:11px 12px;outline:none}.site-form textarea{min-height:140px;resize:vertical;line-height:1.5}.site-form input:focus,.site-form select:focus,.site-form textarea:focus{border-color:var(--gold);box-shadow:0 0 0 2px rgba(217,167,43,.12)}.site-form .btn{border:0;cursor:pointer;justify-self:start}.form-note{font-size:10px!important;color:#776a62!important;margin:0!important}
+@media(max-width:700px){.find-tools{grid-template-columns:1fr;gap:15px;margin-top:26px}.form-grid{grid-template-columns:1fr}.find-tools .find-box{padding:22px}.site-form .btn{width:100%;justify-content:center}}
