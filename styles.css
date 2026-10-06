@@ -176,8 +176,8 @@
   padding:0!important;
   margin:0 auto!important;
 }
-.product-detail-page #embalagem .pack-size-300{--pack-height:60%}
-.product-detail-page #embalagem .pack-size-400{--pack-height:65%}
+.product-detail-page #embalagem .pack-size-300{--pack-height:42%}
+.product-detail-page #embalagem .pack-size-400{--pack-height:45.5%}
 .product-detail-page #embalagem .pack-size-500{--pack-height:70%}
 .product-detail-page #embalagem .pack-size-800{--pack-height:80%}
 .product-detail-page #embalagem .pack-size-1000{--pack-height:85%}
