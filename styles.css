@@ -185,3 +185,27 @@
 @media(max-width:700px){
   .product-detail-page #embalagem .pack-art{height:240px!important}
 }
+
+
+/* Tabelas nutricionais em HTML — alta definição */
+.nutrition-html{display:flex!important;justify-content:center!important;align-items:flex-start!important;background:#fff!important;border:1px solid #e1d8cf!important;padding:8px!important;text-align:left!important}
+.nutrition-label{width:100%;max-width:300px;background:#fff;color:#111;font-family:Arial,Helvetica,sans-serif;line-height:1.08;border:1.7px solid #111;box-sizing:border-box;text-rendering:geometricPrecision;-webkit-font-smoothing:antialiased}
+.nutrition-label .nl-title{font-family:Arial Black,Arial,Helvetica,sans-serif;font-weight:900;text-align:center;font-size:17px;line-height:1;padding:7px 5px 6px;border-bottom:1.7px solid #111;letter-spacing:-.55px}
+.nutrition-label .nl-meta{font-size:9.5px;line-height:1.35;padding:6px 7px;border-bottom:1.35px solid #111}
+.nutrition-label .nl-serving{font-size:10px;font-weight:700;text-align:center;padding:4px 6px;border-bottom:1.5px solid #111}
+.nutrition-label table{width:100%;border-collapse:collapse;border-spacing:0;color:#111;font-family:Arial,Helvetica,sans-serif;font-size:9.4px;line-height:1.05}
+.nutrition-label th,.nutrition-label td{padding:3px 4px;border-right:1px solid #111;border-bottom:1px solid #111;vertical-align:middle}
+.nutrition-label th:last-child,.nutrition-label td:last-child{border-right:0}
+.nutrition-label tbody tr:last-child td{border-bottom:0}
+.nutrition-label thead th{font-weight:800;text-align:center;background:#fff;text-transform:none;letter-spacing:0}
+.nutrition-label tbody td:first-child{font-weight:600;text-align:left}
+.nutrition-label tbody td:not(:first-child){text-align:center;font-weight:600}
+.nutrition-label .nl-foot{border-top:1.5px solid #111;padding:6px 7px;font-size:7.5px;line-height:1.25;font-weight:600}
+.nutrition-label-modern table th:first-child{width:52%}
+.nutrition-label-modern table th:nth-child(2),.nutrition-label-modern table th:nth-child(3),.nutrition-label-modern table th:nth-child(4){width:16%}
+.nutrition-label-classic table th:first-child{text-align:left}
+.nutrition-label-classic table th[colspan="2"]{text-align:left}
+.nutrition-label-classic table td:first-child{width:54%}
+.nutrition-label-classic table td:nth-child(2){width:30%}
+.nutrition-label-classic table td:nth-child(3){width:16%}
+@media(max-width:600px){.nutrition-label{max-width:300px}.nutrition-label .nl-title{font-size:16px}}
