@@ -266,3 +266,93 @@
     transform:scale(.82)!important;
   }
 }
+
+
+/* Ajuste visual das tabelas HTML para o padrão estreito da Chipa */
+/* referência visual: mesma proporção estreita e vertical da tabela da Chipa */
+.product-detail-page .nutrition-image.nutrition-html{
+  height:274px!important;
+  min-height:274px!important;
+  max-height:274px!important;
+  padding:6px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  overflow:hidden!important;
+  box-sizing:border-box!important;
+}
+.product-detail-page .nutrition-html .nutrition-label{
+  width:169px!important;
+  max-width:169px!important;
+  max-height:none!important;
+  margin:0 auto!important;
+  transform:none!important;
+  border:1px solid #111!important;
+  line-height:1!important;
+  font-family:"Arial Narrow",Arial,Helvetica,sans-serif!important;
+}
+.product-detail-page .nutrition-html .nutrition-label .nl-title{
+  font-family:"Arial Narrow",Arial,Helvetica,sans-serif!important;
+  font-size:15px!important;
+  line-height:.95!important;
+  padding:5px 3px 4px!important;
+  letter-spacing:-.65px!important;
+  border-bottom:1px solid #111!important;
+  white-space:nowrap!important;
+}
+.product-detail-page .nutrition-html .nutrition-label .nl-serving{
+  font-size:8.2px!important;
+  line-height:1.05!important;
+  padding:3px 3px!important;
+  border-bottom:1px solid #111!important;
+}
+.product-detail-page .nutrition-html .nutrition-label .nl-meta{
+  font-size:7.3px!important;
+  line-height:1.12!important;
+  padding:4px 4px!important;
+  border-bottom:1px solid #111!important;
+}
+.product-detail-page .nutrition-html .nutrition-label table{
+  font-family:"Arial Narrow",Arial,Helvetica,sans-serif!important;
+  font-size:7.15px!important;
+  line-height:1!important;
+}
+.product-detail-page .nutrition-html .nutrition-label th,
+.product-detail-page .nutrition-html .nutrition-label td{
+  padding:2.1px 2.4px!important;
+  border-right:.8px solid #111!important;
+  border-bottom:.8px solid #111!important;
+}
+.product-detail-page .nutrition-html .nutrition-label thead th{
+  font-size:6.8px!important;
+  line-height:1!important;
+  font-weight:700!important;
+  background:#fff!important;
+}
+.product-detail-page .nutrition-html .nutrition-label tbody td:first-child{
+  font-weight:700!important;
+}
+.product-detail-page .nutrition-html .nutrition-label tbody td:not(:first-child){
+  font-weight:500!important;
+}
+.product-detail-page .nutrition-html .nutrition-label .nl-foot{
+  border-top:1px solid #111!important;
+  padding:4px 4px 5px!important;
+  font-size:6.45px!important;
+  line-height:1.12!important;
+  font-weight:700!important;
+}
+.product-detail-page .nutrition-html .nutrition-label-classic table td:first-child{width:55%!important}
+.product-detail-page .nutrition-html .nutrition-label-classic table td:nth-child(2){width:29%!important}
+.product-detail-page .nutrition-html .nutrition-label-classic table td:nth-child(3){width:16%!important}
+.product-detail-page .nutrition-html .nutrition-label-modern table th:first-child{width:50%!important}
+.product-detail-page .nutrition-html .nutrition-label-modern table th:nth-child(2),
+.product-detail-page .nutrition-html .nutrition-label-modern table th:nth-child(3),
+.product-detail-page .nutrition-html .nutrition-label-modern table th:nth-child(4){width:16.66%!important}
+@media(max-width:600px){
+  .product-detail-page .nutrition-html .nutrition-label{
+    width:169px!important;
+    max-width:169px!important;
+    transform:none!important;
+  }
+}
