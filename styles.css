@@ -209,3 +209,60 @@
 .nutrition-label-classic table td:nth-child(2){width:30%}
 .nutrition-label-classic table td:nth-child(3){width:16%}
 @media(max-width:600px){.nutrition-label{max-width:300px}.nutrition-label .nl-title{font-size:16px}}
+
+
+/* Tabelas nutricionais HTML — mesmo enquadramento da Chipa */
+/* O bloco externo replica exatamente o enquadramento usado pela imagem da Chipa */
+.product-detail-page .nutrition-image.nutrition-html{
+  background:#fff!important;
+  border:1px solid #e1d8cf!important;
+  padding:6px!important;
+  text-align:center!important;
+  height:274px!important;
+  min-height:274px!important;
+  max-height:274px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  overflow:hidden!important;
+  box-sizing:border-box!important;
+}
+
+/* A tabela fica com a mesma presença visual da tabela da Chipa */
+.product-detail-page .nutrition-html .nutrition-label{
+  width:300px!important;
+  max-width:300px!important;
+  max-height:260px!important;
+  margin:0 auto!important;
+  transform-origin:center center!important;
+  box-sizing:border-box!important;
+}
+
+/* Compactação proporcional para manter a tabela inteira dentro da mesma área */
+.product-detail-page .nutrition-html .nutrition-label-modern{
+  transform:scale(.82)!important;
+}
+.product-detail-page .nutrition-html .nutrition-label-classic{
+  transform:scale(.82)!important;
+}
+
+/* Mantém o card nutricional exatamente no mesmo padrão das demais páginas */
+.product-detail-page .nutrition{
+  margin-top:28px!important;
+  padding:16px!important;
+}
+.product-detail-page .nutrition-head{
+  margin-bottom:20px!important;
+}
+
+@media(max-width:600px){
+  .product-detail-page .nutrition-image.nutrition-html{
+    height:274px!important;
+    min-height:274px!important;
+    max-height:274px!important;
+  }
+  .product-detail-page .nutrition-html .nutrition-label-modern,
+  .product-detail-page .nutrition-html .nutrition-label-classic{
+    transform:scale(.82)!important;
+  }
+}
