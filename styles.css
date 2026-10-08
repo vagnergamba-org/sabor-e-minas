@@ -356,3 +356,7 @@
     transform:none!important;
   }
 }
+
+/* Proteção visual não invasiva das imagens */
+img.copy-protected{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-moz-user-select:none}
+.footer-rights{margin-top:18px;padding-top:14px;border-top:1px solid #ded5ca;font-size:10px;line-height:1.5;color:#74665d;text-align:center;letter-spacing:.01em}
