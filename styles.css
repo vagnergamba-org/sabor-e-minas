@@ -360,3 +360,17 @@
 /* Proteção visual não invasiva das imagens */
 img.copy-protected{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-moz-user-select:none}
 .footer-rights{margin-top:18px;padding-top:14px;border-top:1px solid #ded5ca;font-size:10px;line-height:1.5;color:#74665d;text-align:center;letter-spacing:.01em}
+
+/* Nossa História */
+.history-page{padding-top:44px}
+.history-hero{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+.history-copy .lead{max-width:600px}
+.history-photo{margin:0;overflow:hidden;border-radius:6px;background:#eee6dc}
+.history-photo img{display:block;width:100%;height:440px;object-fit:cover}
+.history-timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:52px}
+.history-timeline article{background:#fff;border:1px solid #e4dbd1;padding:24px 22px;min-height:185px}
+.history-year{display:block;font-family:'Cormorant Garamond',serif;font-size:34px;line-height:1;color:var(--wine);font-weight:700;margin-bottom:15px}
+.history-timeline h2{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.05;margin:0 0 10px;color:#33261f}
+.history-timeline p{font-size:12px;line-height:1.55;color:#5d5048;margin:0}
+@media(max-width:900px){.history-hero{grid-template-columns:1fr;gap:28px}.history-photo img{height:360px}.history-timeline{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.history-photo img{height:260px}.history-timeline{grid-template-columns:1fr;margin-top:32px}.history-timeline article{min-height:0}.history-page .page-title{font-size:42px}}
