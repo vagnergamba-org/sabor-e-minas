@@ -1,0 +1,24 @@
+name: Auditoria tecnica estatica (somente leitura)
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  arquivos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar arquivos basicos e conflitos de merge
+        shell: bash
+        run: |
+          test -s index.html || { echo "::error::index.html ausente ou vazio"; exit 1; }
+          if git grep -n -I -E '^(<<<<<<< |=======|>>>>>>> )' -- '*.html' '*.css' '*.js' ':!*.min.js'; then
+            echo "::error::Possiveis marcadores de conflito de merge"
+            exit 1
+          fi
+          echo "Verificacao basica concluida; nao substitui testes visuais ou de links."
