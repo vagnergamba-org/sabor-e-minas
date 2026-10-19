@@ -73,18 +73,19 @@ def collect_local_refs() -> tuple[set[str], list[tuple[str,str]]]:
     existing = {p.name for p in ROOT.iterdir() if p.is_file()}
     referenced: set[str] = set()
     missing: list[tuple[str,str]] = []
-    attr = re.compile(r"(?:src|href)=[\\\"']([^\\\"'#?]+)", re.I)
-    cssurl = re.compile(r"url\\([\\\"']?([^\\\"')]+)", re.I)
+    attr = re.compile(r"""(?:src|href)=["']([^"'#?]+)""", re.I)
+    cssurl = re.compile(r"""url\(([^)]+)\)""", re.I)
     for p in ROOT.iterdir():
         if not (p.is_file() and p.suffix.lower() in TEXT_EXTS):
             continue
         text = p.read_text(encoding="utf-8", errors="ignore")
         raw_refs = [m.group(1) for m in attr.finditer(text)] + [m.group(1) for m in cssurl.finditer(text)]
         for raw in raw_refs:
+            raw = raw.strip().strip("\\"'")
             if re.match(r'^(?:https?:|mailto:|tel:|data:|javascript:)', raw, re.I):
                 continue
             name = raw.split("#",1)[0].split("?",1)[0].replace("%20"," ")
-            if not name or "/" in name and name.startswith("/"):
+            if name.startswith("/"):
                 name = name.lstrip("/")
             if not name or name.endswith("/"):
                 continue
@@ -92,7 +93,6 @@ def collect_local_refs() -> tuple[set[str], list[tuple[str,str]]]:
             if name not in existing:
                 missing.append((p.name, name))
     return referenced, missing
-
 def audit() -> None:
     _, missing = collect_local_refs()
     conflicts = []
