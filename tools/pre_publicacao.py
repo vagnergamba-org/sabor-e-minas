@@ -2,6 +2,7 @@ from __future__ import annotations
 from pathlib import Path
 from PIL import Image, ImageOps
 import re, sys, zipfile
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -84,7 +85,9 @@ def collect_local_refs() -> tuple[set[str], list[tuple[str,str]]]:
             raw = raw.strip().strip(chr(34) + chr(39))
             if re.match(r'^(?:https?:|mailto:|tel:|data:|javascript:)', raw, re.I):
                 continue
-            name = raw.split("#",1)[0].split("?",1)[0].replace("%20"," ")
+            name = unquote(raw.split("#",1)[0].split("?",1)[0])
+            if name.startswith("./"):
+                name = name[2:]
             if name.startswith("/"):
                 name = name.lstrip("/")
             if not name or name.endswith("/"):
