@@ -1,0 +1,42 @@
+name: Finalizacao Sabor e Minas 2026-10-23
+on:
+  push:
+    branches: [final-publicacao-2026-10-23]
+permissions:
+  contents: write
+jobs:
+  finalizar:
+    if: ${{ !contains(github.event.head_commit.message, '[final-auto]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: final-publicacao-2026-10-23
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar Pillow
+        run: python -m pip install --disable-pip-version-check pillow==11.3.0
+      - name: Auditar otimizar e gerar pacotes
+        run: python tools/finalizar_2026_10_23.py
+      - name: Commit de otimizacoes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A ':!Sabor-e-Minas-publicacao-final-2026-10-23.zip' ':!Sabor-e-Minas-backup-completo-2026-10-23.zip'
+          if ! git diff --cached --quiet; then
+            git commit -m "Final audit and optimization [final-auto]"
+            git push origin HEAD:final-publicacao-2026-10-23
+          fi
+      - name: Enviar pacotes
+        uses: actions/upload-artifact@v4
+        with:
+          name: sabor-e-minas-final-2026-10-23
+          path: |
+            Sabor-e-Minas-publicacao-final-2026-10-23.zip
+            Sabor-e-Minas-backup-completo-2026-10-23.zip
+          if-no-files-found: error
+          retention-days: 90
